@@ -1,23 +1,19 @@
-# employee-leave-management-system
-Spring Boot backend project for employee leave management with REST APIs, MySQL integration, validation, exception handling, and layered architecture.
-
 # Employee Leave Management System
 
-A backend REST API application developed using Java, Spring Boot, and MySQL for managing employees and leave requests. This project demonstrates CRUD operations, validation, exception handling, layered architecture, and database integration.
+A Spring Boot backend project for managing employees and leave requests using REST APIs, MySQL, and layered architecture.
 
 ---
 
 ## Features
 
 - Add Employee
-- View All Employees
-- Apply Leave Request
-- View Leave Requests
-- Approve Leave Requests
+- Get All Employees
+- Apply Leave
+- Approve Leave
 - Validation Handling
 - Global Exception Handling
 - MySQL Database Integration
-- RESTful APIs
+- REST API Development
 
 ---
 
@@ -44,7 +40,7 @@ Controller → Service → Repository → Database
 ### Employee APIs
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+|--------|-----------|-------------|
 | POST | /api/employees | Add Employee |
 | GET | /api/employees | Get All Employees |
 
@@ -53,71 +49,111 @@ Controller → Service → Repository → Database
 ### Leave APIs
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+|--------|-----------|-------------|
 | POST | /api/leaves | Apply Leave |
 | GET | /api/leaves | Get All Leave Requests |
-| PUT | /api/leaves/{id}?status=Approved | Approve Leave Request |
+| PUT | /api/leaves/{id}?status=Approved | Approve Leave |
 
 ---
 
-## Tools Used
+## Validation Example
 
-- IntelliJ IDEA
-- MySQL Workbench
-- Postman
+The project uses validation annotations like:
 
----
+- @NotBlank
+- @Email
 
-## API Screenshots
+Example validation response:
 
-### Create Employee API
-
-![Create Employee](screenshots/Create Employee API.png)
-
----
-
-### Get Employees API
-
-![Get Employees](screenshots/Get Employees API.png)
+```json
+{
+  "email": "Invalid email format",
+  "name": "Name is required"
+}
 
 ---
 
-### Apply Leave API
+## Database Tables
 
-![Apply Leave API](screenshots/Apply Leave API.png)
-
----
-
-### Approve Leave API
-
-![Approve Leave API](screenshots/Approve Leave API.png)
+- employees
+- leave_requests
 
 ---
 
-### Validation Test API
+# API Screenshots
 
-![Validation Test API](screenshots/Validation Test API.png)
+## Create Employee API
 
----
-
-### Employee Records MySQL
-
-![Employee Records](screenshots/employee records in mysql.png)
+![Create Employee](screenshots/Create-Employee-API.png)
 
 ---
 
-### Leave Requests MySQL
+## Get Employees API
 
-![Leave Requests](screenshots/show all leaves request mysql.png)
-
----
-
-### Employee Leave Relationship Query
-
-![Relationship Query](screenshots/Employee + Leave Relationship Query mysql.png)
+![Get Employees](screenshots/Get-Employees-API.png)
 
 ---
 
-## Author
+## Apply Leave API
 
-Omkar Sutar
+![Apply Leave API](screenshots/Apply-Leave-API.png)
+
+---
+
+## Approve Leave API
+
+![Approve Leave API](screenshots/Approve-Leave-API.png)
+
+---
+
+## Validation Test API
+
+![Validation Test API](screenshots/Validation-Test-API.png)
+
+---
+
+## Get All Leave Requests API
+
+![Get All Leave Requests API](screenshots/get-all-leaves-request-api.png)
+
+---
+
+# MySQL Screenshots
+
+## Employee Records
+
+![Employee Records](screenshots/employee-records-in-mysql.png)
+
+---
+
+## Leave Requests Table
+
+![Leave Requests](screenshots/show-all-leaves-request-mysql.png)
+
+---
+
+## Approved Leaves Query
+
+![Approved Leaves](screenshots/Approve-leaves-in-mysql.png)
+
+---
+
+## Employee Leave Relationship Query
+
+![Relationship Query](screenshots/Employee-Leave-Relationship-Query-mysql.png)
+
+---
+
+## Employee Count Query
+
+![Employee Count](screenshots/count-employee-mysql.png)
+
+---
+
+# Author
+
+## Omkar Sutar
+
+- Java Developer
+- Spring Boot Backend Developer
+- Passionate About Backend Development
