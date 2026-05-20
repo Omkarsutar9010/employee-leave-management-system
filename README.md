@@ -1,4 +1,4 @@
-# Employee Leave Management System
+# Employee Leave Management System 
 
 A Spring Boot backend project for managing employees and leave requests using REST APIs, MySQL, and layered architecture.
 
@@ -70,14 +70,14 @@ Example validation response:
   "email": "Invalid email format",
   "name": "Name is required"
 }
-```
+````
 
 ---
 
 ## Database Tables
 
-- employees
-- leave_requests
+* employees
+* leave_requests
 
 ---
 
@@ -85,37 +85,37 @@ Example validation response:
 
 ## Create Employee API
 
-![Create Employee](screenshots/Create%20Employee%20API.png)
+![Create Employee](screenshots/Create-Employee-API.png)
 
 ---
 
 ## Get Employees API
 
-![Get Employees](screenshots/Get%20Employees%20API.png)
+![Get Employees](screenshots/Get-Employees-API.png)
 
 ---
 
 ## Apply Leave API
 
-![Apply Leave API](screenshots/Apply%20Leave%20API.png)
+![Apply Leave API](screenshots/Apply-Leave-API.png)
 
 ---
 
 ## Approve Leave API
 
-![Approve Leave API](screenshots/Approve%20Leave%20API.png)
+![Approve Leave API](screenshots/Approve-Leave-API.png)
 
 ---
 
 ## Validation Test API
 
-![Validation Test API](screenshots/Validation%20Test%20API.png)
+![Validation Test API](screenshots/Validation-Test-API.png)
 
 ---
 
 ## Get All Leave Requests API
 
-![Get All Leave Requests API](screenshots/get%20all%20leaves%20request%20api.png)
+![Get All Leave Requests API](screenshots/get-all-leaves-request-api.png)
 
 ---
 
@@ -123,31 +123,31 @@ Example validation response:
 
 ## Employee Records
 
-![Employee Records](screenshots/employee%20records%20in%20mysql.png)
+![Employee Records](screenshots/employee-records-in-mysql.png)
 
 ---
 
 ## Leave Requests Table
 
-![Leave Requests](screenshots/show%20all%20leaves%20request%20mysql.png)
+![Leave Requests](screenshots/show-all-leaves-request-mysql.png)
 
 ---
 
 ## Approved Leaves Query
 
-![Approved Leaves](screenshots/Approve%20leaves%20in%20mysql.png)
+![Approved Leaves](screenshots/Approve-leaves-in-mysql.png)
 
 ---
 
 ## Employee Leave Relationship Query
 
-![Relationship Query](screenshots/Employee%20+%20Leave%20Relationship%20Query%20mysql.png)
+![Relationship Query](screenshots/Employee-Leave-Relationship-Query-mysql.png)
 
 ---
 
 ## Employee Count Query
 
-![Employee Count](screenshots/count%20employee%20mysql.png)
+![Employee Count](screenshots/count-employee-mysql.png)
 
 ---
 
@@ -155,6 +155,9 @@ Example validation response:
 
 ## Omkar Sutar
 
-- Java Developer
-- Spring Boot Backend Developer
-- Passionate About Backend Development
+* Java Developer
+* Spring Boot Backend Developer
+* Passionate About Backend Development
+
+```
+```
