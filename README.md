@@ -70,6 +70,7 @@ Example validation response:
   "email": "Invalid email format",
   "name": "Name is required"
 }
+```
 
 ---
 
