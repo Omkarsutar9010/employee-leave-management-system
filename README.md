@@ -1,3 +1,86 @@
+# Employee Leave Management System
+
+A Spring Boot backend project for managing employees and leave requests using REST APIs, MySQL, and layered architecture.
+
+---
+
+## Features
+
+- Add Employee
+- Get All Employees
+- Apply Leave
+- Approve Leave
+- Validation Handling
+- Global Exception Handling
+- MySQL Database Integration
+- REST API Development
+
+---
+
+## Technologies Used
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- MySQL
+- Maven
+- Postman
+- Git & GitHub
+
+---
+
+## Project Architecture
+
+Controller → Service → Repository → Database
+
+---
+
+## API Endpoints
+
+### Employee APIs
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | /api/employees | Add Employee |
+| GET | /api/employees | Get All Employees |
+
+---
+
+### Leave APIs
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | /api/leaves | Apply Leave |
+| GET | /api/leaves | Get All Leave Requests |
+| PUT | /api/leaves/{id}?status=Approved | Approve Leave |
+
+---
+
+## Validation Example
+
+The project uses validation annotations like:
+
+- @NotBlank
+- @Email
+
+Example validation response:
+
+```json
+{
+  "email": "Invalid email format",
+  "name": "Name is required"
+}
+```
+
+---
+
+## Database Tables
+
+- employees
+- leave_requests
+
+---
+
 # API Screenshots
 
 ## Create Employee API
@@ -65,3 +148,13 @@
 ## Employee Count Query
 
 ![Employee Count](./screenshots/count%20employee%20mysql.png)
+
+---
+
+# Author
+
+## Omkar Sutar
+
+- Java Developer
+- Spring Boot Backend Developer
+- Passionate About Backend Development
